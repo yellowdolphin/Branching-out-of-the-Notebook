@@ -50,6 +50,9 @@ def text2img(text: str):
 
     return StreamingResponse(io.BytesIO(img.tobytes()), media_type="image/png")
 
+ # create a img2img route
+ 
+
 # run the app
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
